@@ -1,0 +1,164 @@
+/* Resetting default margin and padding */
+body, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #ca227e; /* Dark text color */
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40; /* Dark gray background for navigation */
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff; /* White color for navigation links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Yellow color on hover for navigation links */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for sections */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for sections */
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for section headings */
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* Project section styles */
+.project {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #333; /* Dark text color for project headings */
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project ul {
+    margin-top: 10px;
+}
+
+.project ul li {
+    margin-bottom: 5px;
+}
+
+.project ul li:last-child {
+    margin-bottom: 0;
+}
+
+.project ul li:before {
+    content: "•"; /* Bullet symbol for list items */
+    color: #007bff; /* Blue color for bullets */
+    margin-right: 5px;
+}
+
+/* Contact section styles */
+.contact ul {
+    padding-left: 0;
+}
+
+.contact ul ul {
+    margin-top: 10px;
+}
+
+.contact ul ul li {
+    margin-left: 20px;
+}
+
+.contact ul ul li a {
+    color: #000; /* Black color for social media links */
+}
+
+.contact ul ul li a:hover {
+    color: #007bff; /* Blue color on hover for social media links */
+}
+
+/* Image styles */
+img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%; /* Rounded border for circular image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .contact ul ul li {
+        margin-left: 10px;
+    }
+}
